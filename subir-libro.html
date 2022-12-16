@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual | CACH</title>
+    <meta name="description" content="Sitio web de una biblioteca virtual">
+    <link rel="icon" href="img/logo_de_la_biblioteca-virtual.ico" type="image/ico" sizes="16x16">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L93SX44528"></script>
+
+
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+<body>
+    <header class="header">
+        <!-- <div class="logo-imagen">
+            <picture>
+                <source srcset="img/logo_de_la_biblioteca-virtual.webp" type="image/webp" loading="lazy">
+                <img class="universal-class logo-img" src="img/logo_de_la_biblioteca-virtual.png" alt="Imagen de chick-lit" loading="lazy">
+            </picture>
+        </div> -->
+
+        <div class="contenedor">
+            <div class="barra">
+                <a href="index.html" class="logo"><h1 class="titulo-principal">Biblioteca Virtual <span class="logo_nombre no-margin centrar-texto logo__bold">CACH</span></h1></a>
+                <nav class="navegacion">
+                    <a href="index.html" class="navegacion__enlace navegacion__enlace--activo">Inicio</a>
+                    <a href="nosotros.html" class="navegacion__enlace">Sobre nosotros</a>
+                    <!-- <a href="#" class="navegacion__enlace">Contacto</a> -->
+                </nav>
+                
+            </div><!--.barra-->
+        </div><!--.contenedor-->
+
+        <!-- <div class="barra-nav">
+            <nav class="nav">
+                <button class="btn">Mas</button>
+                    <div class="list">
+                        <li class="item"><a class="link" href="subir-libro.html">Subir libros</a></li>
+                    </div>
+            </nav>
+        </div> -->
+    </header>
+    
+    <section class="description">
+        <p class="introduction">¿Quieres compartir tus libros favoritos? En este apartado podrás subir los libros que más te gustan.</p>
+    </section>
+
+    <section class="principal-compartir">
+        <form class="formulario" action="subrir_libros.php">
+            <div class="contenedor-campos">
+                    <div class="campo">
+                        <label for="nom-libro">Nombre del Libro</label>
+                        <input id="nom-libro" type="text" class="input-text" maxlength="45" placeholder="Escribe el nombre del libro">
+                    </div>
+            
+                    <div class="campo">
+                        <label for="autor">Autor</label>
+                        <input id="autor" required spellcheck="true" type="text" class="input-text" maxlength="30" placeholder="Escribe el nombre del autor">
+                    </div>
+        
+                    <div class="campo">
+                        <label for="genero">Genero del Libro</label>
+                        <input id="genero" required spellcheck="true" type="text" class="input-text" maxlength="15" placeholder="Escribe el genero del libro">
+                    </div>
+            
+                    <div class="campo">
+                        <label for="descripcion">Descripción</label>
+                        <textarea id="descripcion" required spellcheck="true" maxlength="200"></textarea>
+                    </div>
+        
+                    <div class="campo">
+                        <label>Subir Libro</label>
+                        <input required spellcheck="true" type="file" class="input-text">
+                    </div>
+        
+                    <div class="alinear-derecha flex campo">
+                        <input class="w-100" type="submit" value="Publicar">
+                    </div>
+            </div><!--.contenedor-campos--> 
+        </form>       
+    </section>
+
+    <!-- <footer class="footer pie">
+        <hr>
+
+        <p class="pie">
+            <br>
+            Contacto
+            <br>
+            <a class="universal-contacto link-contacto" href="mailto:teamcach3@gmail.com">teamcach3@gmail.com</a>
+            <br>
+            &copy; Derechos Reservados CACH 2022
+        </p>
+    </footer> -->
+</body>
+</html>
